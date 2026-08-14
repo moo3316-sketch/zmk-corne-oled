@@ -113,10 +113,10 @@
         raise_layer {
             display-name = "EDIT";
             bindings = <
-&trans         &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &trans                            &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &trans        &trans
-&kp LG(LS(S))  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &trans                    &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &trans        &trans
-&trans         &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &bt BT_CLR_ALL            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &out OUT_USB  &out OUT_BLE
-                                     &trans     &trans     &trans                                            &kp DEL               &trans                 &trans
+&trans         &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &trans                    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &trans        &trans
+&kp LG(LS(S))  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &trans            &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &trans        &trans
+&trans         &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &out OUT_USB  &out OUT_BLE
+                                     &trans     &trans     &trans                                    &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -125,10 +125,10 @@
         layer_3 {
             display-name = "DRIFT";
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans          &trans  &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans            &trans          &trans  &trans          &trans        &trans         &trans  &trans
-                                    &trans        &trans        &trans                                          &trans  &trans          &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans          &trans  &kp LC(LEFT)    &kp UP_ARROW  &kp LC(RIGHT)  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL            &trans          &trans  &kp DELETE      &trans        &trans         &trans  &trans
+                                    &trans        &trans        &trans                                                  &trans  &trans          &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
