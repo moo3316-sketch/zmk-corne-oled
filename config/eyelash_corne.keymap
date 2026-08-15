@@ -6,6 +6,7 @@
 #include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -125,10 +126,10 @@
         layer_3 {
             display-name = "DRIFT";
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans          &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL            &tog 5          &kp DELETE      &kp DELETE      &trans         &trans  &trans  &trans
-                                    &trans        &trans        &trans                                                  &trans          &trans          &trans
+&trans  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans          &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)  &trans  &trans  &trans
+&trans  &trans            &trans             &trans        &trans        &trans                          &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans  &trans  &trans
+&trans  &ext_power EP_ON  &ext_power EP_OFF  &trans        &trans        &trans        &bt BT_CLR_ALL            &tog 5          &kp DELETE      &kp DELETE      &trans         &trans  &trans  &trans
+                                             &trans        &trans        &trans                                                  &trans          &trans          &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
