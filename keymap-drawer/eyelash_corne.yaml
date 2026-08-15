@@ -117,7 +117,7 @@ layers:
   - Ctl+S
   - Ctl+D
   - Ctl+F
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -132,7 +132,7 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+R
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - ':'
@@ -179,7 +179,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - EP ON
   - EP OFF
-  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
