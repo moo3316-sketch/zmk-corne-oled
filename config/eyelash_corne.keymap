@@ -113,10 +113,10 @@
         raise_layer {
             display-name = "EDIT";
             bindings = <
-&trans         &kp LA(LEFT_ARROW)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LA(TAB)                    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &trans        &trans
-&kp LG(LS(S))  &kp LC(A)           &kp LC(S)  &kp LC(D)  &kp LC(F)  &trans                 &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &trans        &trans
-&trans         &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans       &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &out OUT_USB  &out OUT_BLE
-                                              &trans     &trans     &trans                                         &trans                &trans                 &trans
+&trans         &kp LA(LEFT_ARROW)  &kp LC(W)  &kp LC(E)  &kp LC(R)     &kp LA(TAB)                    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &trans        &trans
+&kp LG(LS(S))  &kp LC(A)           &kp LC(S)  &kp LC(D)  &kp LC(F)     &kp LC(G)              &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &trans        &trans
+&trans         &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(B)    &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &out OUT_USB  &out OUT_BLE
+                                              &kp LCTRL  &kp LEFT_ALT  &trans                                         &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -127,7 +127,7 @@
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans          &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL            &tog 5          &kp DELETE      &kp DELETE      &trans         &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL            &tog 5          &kp DELETE      &kp DELETE      &kp DEL        &trans  &trans  &trans
                                     &trans        &kp LEFT_WIN  &trans                                                  &trans          &trans          &trans
             >;
 
@@ -137,10 +137,10 @@
         layer_4 {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans  &kp PRINTSCREEN  &trans    &trans                           &trans          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &kp INSERT       &kp HOME  &kp PAGE_UP              &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &trans   &trans   &trans
-&trans  &trans  &trans  &kp DELETE       &kp END   &kp PAGE_DOWN  &trans            &trans          &kp F1  &kp F2  &kp F3  &trans   &trans   &trans
-                        &trans           &trans    &trans                                           &trans  &trans  &trans
+&trans  &trans  &trans  &kp PRINTSCREEN  &trans        &trans                           &trans          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &kp INSERT       &kp HOME      &kp PAGE_UP              &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &trans   &trans   &trans
+&trans  &trans  &trans  &kp DELETE       &kp END       &kp PAGE_DOWN  &trans            &trans          &kp F1  &kp F2  &kp F3  &trans   &trans   &trans
+                        &kp LCTRL        &kp LEFT_ALT  &trans                                           &trans  &trans  &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -148,13 +148,22 @@
 
         layer_5 {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none          &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none           &none  &none   &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none           &tog 5         &none  &none  &none  &none  &none  &none
-                     &none  &none  &none                                 &none  &none  &none
+&trans  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &none          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans        &kp ENTER           &none  &none   &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans        &trans     &none           &tog 5         &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp LCTRL     &kp LEFT_ALT  &trans                                    &trans  &trans  &trans
             >;
 
             label = "LOCK";
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
