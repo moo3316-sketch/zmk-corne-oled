@@ -125,10 +125,10 @@
         layer_3 {
             display-name = "DRIFT";
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans          &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)  &trans  &trans  &trans
-&trans  &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                          &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL            &tog 5          &kp DELETE      &kp DELETE      &kp DEL        &trans  &trans  &trans
-                                    &trans        &kp LEFT_WIN  &trans                                                  &trans          &kp RIGHT_ALT   &kp LANG2
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans          &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)   &trans  &trans  &trans
+&trans  &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans                          &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT       &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL            &tog 5          &kp DELETE      &kp DELETE      &kp DEL         &trans  &trans  &trans
+                                    &trans        &kp LEFT_WIN  &trans                                                  &trans          &trans          &kp LANG_HANJA
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -158,6 +158,15 @@
         };
 
         layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
