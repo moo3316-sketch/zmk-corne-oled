@@ -83,6 +83,72 @@
         };
     };
 
+    macros {
+        dot: dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_NUMBER_4 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DOT";
+            wait-ms = <40>;
+            tap-ms = <40>;
+        };
+
+        angle_open: angle_open {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_NUMBER_0 &kp KP_NUMBER_0 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ANGLE_OPEN";
+            wait-ms = <40>;
+            tap-ms = <40>;
+        };
+
+        angle_close: angle_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_NUMBER_0 &kp KP_NUMBER_0 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "angle_close";
+            wait-ms = <40>;
+            tap-ms = <40>;
+        };
+
+        middot: middot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_NUMBER_8 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "middot";
+            wait-ms = <40>;
+            tap-ms = <40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -103,7 +169,7 @@
             bindings = <
 &kp CAPS  &kp DELETE  &kp UP_ARROW  &trans     &trans    &trans                    &trans          &kp N7     &kp N8  &kp N9      &kp PLUS   &kp MINUS  &kp EQUAL
 &trans    &kp LEFT    &kp DOWN      &kp RIGHT  &trans    &trans            &trans  &trans  &trans  &kp N4     &kp N5  &kp N6      &kp ASTRK  &kp SLASH  &trans
-&trans    &trans      &trans        &trans     &trans    &trans  &trans            &trans          &kp N1     &kp N2  &kp N3      &trans     &trans     &trans
+&trans    &trans      &trans        &trans     &trans    &trans  &trans            &dot            &kp N1     &kp N2  &kp N3      &trans     &trans     &trans
                                     &kp LCTRL  &kp LALT  &mo 4                                     &kp COMMA  &kp N0  &kp PERIOD
             >;
 
@@ -114,8 +180,8 @@
             display-name = "EDIT";
             bindings = <
 &trans         &kp LA(LEFT_ARROW)  &kp LC(W)  &kp LC(E)  &kp LC(R)     &kp LA(TAB)                    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LG(LS(S))  &kp LC(A)           &kp LC(S)  &kp LC(D)  &kp LC(F)     &kp LC(G)              &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &trans            &trans
-&trans         &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(B)    &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &out OUT_USB      &out OUT_BLE
+&kp LG(LS(S))  &kp LC(A)           &kp LC(S)  &kp LC(D)  &kp LC(F)     &kp LC(G)              &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &angle_open       &angle_close
+&trans         &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(B)    &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &middot           &dot
                                               &kp LCTRL  &kp LEFT_ALT  &trans                                         &trans                &trans                 &trans
             >;
 
