@@ -139,8 +139,8 @@ layers:
   - {t: ;, s: ':'}
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&middot'
   - '&dot'
+  - '&middot'
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {type: held}
