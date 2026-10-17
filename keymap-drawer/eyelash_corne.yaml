@@ -194,7 +194,7 @@ layers:
   - LEFT WIN
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - LANG HANJA
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
