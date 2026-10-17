@@ -181,7 +181,7 @@
             bindings = <
 &trans         &kp LA(LEFT_ARROW)  &kp LC(W)  &kp LC(E)  &kp LC(R)     &kp LA(TAB)                    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LG(LS(S))  &kp LC(A)           &kp LC(S)  &kp LC(D)  &kp LC(F)     &kp LC(G)              &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &angle_open       &angle_close
-&trans         &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(B)    &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &middot           &dot
+&trans         &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(B)    &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &dot              &middot
                                               &kp LCTRL  &kp LEFT_ALT  &trans                                         &trans                &trans                 &trans
             >;
 
