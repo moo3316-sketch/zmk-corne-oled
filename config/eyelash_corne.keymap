@@ -96,8 +96,8 @@
                 <&kp LEFT_ALT>;
 
             label = "DOT";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <20>;
+            tap-ms = <20>;
         };
 
         angle_open: angle_open {
@@ -112,8 +112,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ANGLE_OPEN";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <20>;
+            tap-ms = <20>;
         };
 
         angle_close: angle_close {
@@ -128,8 +128,8 @@
                 <&kp LEFT_ALT>;
 
             label = "angle_close";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <20>;
+            tap-ms = <20>;
         };
 
         middot: middot {
@@ -144,8 +144,8 @@
                 <&kp LEFT_ALT>;
 
             label = "middot";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <20>;
+            tap-ms = <20>;
         };
     };
 
