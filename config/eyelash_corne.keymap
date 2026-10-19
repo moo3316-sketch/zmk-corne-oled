@@ -1,5 +1,7 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 750  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40   // 10
+
+CONFIG_ZMK_DISPLAY_DEDICATED_THREAD_PRIORITY=10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
