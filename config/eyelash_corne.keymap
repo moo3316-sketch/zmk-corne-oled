@@ -182,7 +182,7 @@
 &trans         &kp LA(LEFT_ARROW)  &kp LC(W)  &kp LC(E)  &kp LC(R)     &kp LA(TAB)                    &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LG(LS(S))  &kp LC(A)           &kp LC(S)  &kp LC(D)  &kp LC(F)     &kp LC(G)              &trans  &trans  &trans  &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE       &kp EXCL   &kp QUESTION    &angle_open       &angle_close
 &trans         &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(B)    &trans            &trans          &kp COLON             &kp SEMICOLON          &kp TILDE  &trans          &dot              &middot
-                                              &kp LCTRL  &kp LEFT_ALT  &trans                                         &trans                &trans                 &trans
+                                              &kp LCTRL  &kp LEFT_ALT  &trans                                         &mo 5                 &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -214,10 +214,10 @@
 
         layer_5 {
             bindings = <
-&trans  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &none          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans        &kp ENTER           &none  &none   &none  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans        &trans     &none           &tog 5         &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp LCTRL     &kp LEFT_ALT  &trans                                    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &none          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &mmv MOVE_X(400)
+&trans  &trans  &trans  &trans  &trans  &trans           &none  &none   &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &mmv MOVE_Y(400)
+&trans  &trans  &trans  &trans  &trans  &trans  &none           &tog 5         &msc SCRL_UP    &mkp MCLK       &msc SCRL_DOWN   &trans  &trans  &trans
+                        &trans  &trans  &trans                                 &trans          &trans          &trans
             >;
 
             label = "LOCK";
