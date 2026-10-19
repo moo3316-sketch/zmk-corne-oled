@@ -282,9 +282,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: LOCK, h: toggle}
-  - $$mdi:pan-up$$
-  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:pan-down$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:pan-up$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
