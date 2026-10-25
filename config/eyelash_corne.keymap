@@ -227,7 +227,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &mkp LCLK          &mmv MOVE_Y(-200)  &mkp RCLK         &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(200)   &mmv MOVE_X(200)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &msc MOVE_Y(-10)   &msc MOVE_X(10)    &mkp MB4          &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &msc MOVE_Y(-10)   &msc MOVE_Y(10)    &mkp MB4          &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans             &trans             &trans
             >;
         };
