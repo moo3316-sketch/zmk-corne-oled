@@ -332,7 +332,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&msc MOVE_Y(-10)'
-  - '&msc MOVE_X(10)'
+  - '&msc MOVE_Y(10)'
   - '&mkp MB4'
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
