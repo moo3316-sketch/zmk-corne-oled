@@ -214,13 +214,22 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                   &none          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &none          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &none  &none   &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans           &tog 5         &msc SCRL_DOWN  &mkp MCLK       &msc SCRL_UP     &trans  &trans  &trans
-                        &trans  &trans  &trans                                  &mkp LCLK       &mkp RCLK       &trans
+                        &trans  &trans  &trans                                  &mo 6           &mkp MB4        &trans
             >;
 
             label = "MMV";
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans             &mmv MOVE_Y(-200)  &trans            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(200)   &mmv MOVE_X(200)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &msc MOVE_Y(10)    &trans             &msc MOVE_Y(-10)  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans             &trans             &trans
+            >;
         };
     };
 };
