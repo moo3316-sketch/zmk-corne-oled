@@ -166,10 +166,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&gresc     &kp Q              &kp W              &kp E                 &kp R      &kp T                                       &kp UP                &kp Y   &kp U          &kp I                  &kp O              &kp P                 &kp BSPC
-&lt 1 TAB  &home_mod A LCTRL  &home_mod S LSHFT  &home_mod D LEFT_ALT  &kp F      &home_mod G LEFT_WIN              &kp LEFT  &kp ENTER  &kp RIGHT  &kp H   &kp J          &home_mod K RIGHT_ALT  &home_mod L RSHFT  &home_mod SEMI RCTRL  &kp ENTER
-&kp LSHFT  &kp Z              &kp X              &kp C                 &kp V      &kp B                 &kp LALT              &kp DOWN              &td_nb  &kp M          &kp COMMA              &kp DOT            &kp FSLH              &kp RSHFT
-                                                 &lt 5 LCTRL           &kp SPACE  &mo 2                                                             &mo 3   &kp BACKSPACE  &kp RALT
+&gresc     &kp Q              &kp W              &kp E             &kp R      &kp T                                       &kp UP                &kp Y   &kp U          &kp I             &kp O              &kp P                      &kp BSPC
+&lt 1 TAB  &home_mod LCTRL A  &home_mod LSHFT S  &home_mod LALT D  &kp F      &home_mod G LEFT_WIN              &kp LEFT  &kp ENTER  &kp RIGHT  &kp H   &kp J          &home_mod RALT K  &home_mod RSHFT L  &home_mod RCTRL SEMICOLON  &kp ENTER
+&kp LSHFT  &kp Z              &kp X              &kp C             &kp V      &kp B                 &kp LALT              &kp DOWN              &td_nb  &kp M          &kp COMMA         &kp DOT            &kp FSLH                   &kp RSHFT
+                                                 &lt 5 LCTRL       &kp SPACE  &mo 2                                                             &mo 3   &kp BACKSPACE  &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
