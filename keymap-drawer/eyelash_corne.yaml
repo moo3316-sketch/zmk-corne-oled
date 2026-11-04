@@ -19,7 +19,7 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - F
-  - {t: LEFT WIN, h: G}
+  - {t: G, h: LEFT WIN}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
