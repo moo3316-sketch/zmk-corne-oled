@@ -167,7 +167,7 @@
             display-name = "QWERTY";
             bindings = <
 &gresc     &kp Q              &kp W              &kp E             &kp R      &kp T                                       &kp UP                &kp Y   &kp U          &kp I             &kp O              &kp P                      &kp BSPC
-&lt 1 TAB  &home_mod LCTRL A  &home_mod LSHFT S  &home_mod LALT D  &kp F      &home_mod G LEFT_WIN              &kp LEFT  &kp ENTER  &kp RIGHT  &kp H   &kp J          &home_mod RALT K  &home_mod RSHFT L  &home_mod RCTRL SEMICOLON  &kp ENTER
+&lt 1 TAB  &home_mod LCTRL A  &home_mod LSHFT S  &home_mod LALT D  &kp F      &home_mod LEFT_WIN G              &kp LEFT  &kp ENTER  &kp RIGHT  &kp H   &kp J          &home_mod RALT K  &home_mod RSHFT L  &home_mod RCTRL SEMICOLON  &kp ENTER
 &kp LSHFT  &kp Z              &kp X              &kp C             &kp V      &kp B                 &kp LALT              &kp DOWN              &td_nb  &kp M          &kp COMMA         &kp DOT            &kp FSLH                   &kp RSHFT
                                                  &lt 5 LCTRL       &kp SPACE  &mo 2                                                             &mo 3   &kp BACKSPACE  &kp RALT
             >;
