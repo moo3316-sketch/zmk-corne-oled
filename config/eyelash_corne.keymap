@@ -58,6 +58,17 @@
             cw-binding = <&kp C_VOL_UP>;
             ccw-binding = <&kp C_VOL_DN>;
         };
+
+        home_mod: home_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            quick-tap-ms = <0>;
+            tapping-term-ms = <550>;
+            flavor = "tap-preferred";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -155,10 +166,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&gresc     &kp Q  &kp W  &kp E        &kp R      &kp T                        &kp UP                &kp Y   &kp U          &kp I      &kp O    &kp P     &kp BSPC
-&lt 1 TAB  &kp A  &kp S  &kp D        &kp F      &kp G              &kp LEFT  &kp ENTER  &kp RIGHT  &kp H   &kp J          &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C        &kp V      &kp B  &kp LALT              &kp DOWN              &td_nb  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &lt 5 LCTRL  &kp SPACE  &mo 2                                              &mo 3   &kp BACKSPACE  &kp RALT
+&gresc     &kp Q              &kp W              &kp E                 &kp R      &kp T                                       &kp UP                &kp Y   &kp U          &kp I                  &kp O              &kp P                 &kp BSPC
+&lt 1 TAB  &home_mod A LCTRL  &home_mod S LSHFT  &home_mod D LEFT_ALT  &kp F      &home_mod G LEFT_WIN              &kp LEFT  &kp ENTER  &kp RIGHT  &kp H   &kp J          &home_mod K RIGHT_ALT  &home_mod L RSHFT  &home_mod SEMI RCTRL  &kp ENTER
+&kp LSHFT  &kp Z              &kp X              &kp C                 &kp V      &kp B                 &kp LALT              &kp DOWN              &td_nb  &kp M          &kp COMMA              &kp DOT            &kp FSLH              &kp RSHFT
+                                                 &lt 5 LCTRL           &kp SPACE  &mo 2                                                             &mo 3   &kp BACKSPACE  &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -225,10 +236,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &mkp LCLK          &mmv MOVE_Y(-200)  &mkp RCLK         &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &mmv MOVE_X(-200)  &mmv MOVE_Y(200)   &mmv MOVE_X(200)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &msc MOVE_Y(-10)   &msc MOVE_Y(10)    &mkp MB4          &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &mkp LCLK            &mmv (MOVE_Y(-200))  &mkp RCLK         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &mmv (MOVE_X(-200))  &mmv MOVE_Y(200)     &mmv MOVE_X(200)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &msc (MOVE_Y(-10))   &msc MOVE_Y(10)      &mkp MB4          &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans               &trans               &trans
             >;
         };
     };
