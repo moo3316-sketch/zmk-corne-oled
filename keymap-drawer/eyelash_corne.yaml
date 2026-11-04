@@ -15,9 +15,9 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
-  - {t: '$$mdi:apple-keyboard-control$$', h: A}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: S}
-  - {t: '$$mdi:apple-keyboard-option$$', h: D}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - F
   - {t: LEFT WIN, h: G}
   - $$mdi:arrow-left-bold$$
@@ -25,9 +25,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - H
   - J
-  - {t: '$$mdi:apple-keyboard-option$$', h: K}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: L}
-  - {t: '$$mdi:apple-keyboard-control$$', h: ;}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - Z
